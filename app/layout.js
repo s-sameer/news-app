@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Modern News App',
@@ -11,9 +12,9 @@ export default function RootLayout({ children }) {
       <body>
         <header className="bg-black text-white p-4 sticky top-0 z-10 shadow-md">
           <div className="container mx-auto">
-            <a href="/">
+            <Link href="/">
               <h1 className="text-2xl font-bold">NewsFlash</h1>
-            </a>
+            </Link>
           </div>
         </header>
         <div className="min-h-screen bg-black">
